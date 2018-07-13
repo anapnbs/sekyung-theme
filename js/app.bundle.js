@@ -94,7 +94,7 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\n__webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n\n__webpack_require__(/*! popper.js */ \"./node_modules/popper.js/dist/esm/popper.js\");\n\n__webpack_require__(/*! bootstrap */ \"./node_modules/bootstrap/dist/js/bootstrap.js\");\n\n__webpack_require__(/*! lightbox2/dist/js/lightbox-plus-jquery.js */ \"./node_modules/lightbox2/dist/js/lightbox-plus-jquery.js\");\n\nvar _bsComponents = __webpack_require__(/*! ./modules/bsComponents.js */ \"./js/modules/bsComponents.js\");\n\nvar _wowAnimate = __webpack_require__(/*! ./modules/wowAnimate.js */ \"./js/modules/wowAnimate.js\");\n\nvar _shadow = __webpack_require__(/*! ./modules/shadow.js */ \"./js/modules/shadow.js\");\n\nvar _script = __webpack_require__(/*! ./modules/script.js */ \"./js/modules/script.js\");\n\n//# sourceURL=webpack:///./js/app.js?");
+eval("\n\n__webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n\n__webpack_require__(/*! popper.js */ \"./node_modules/popper.js/dist/esm/popper.js\");\n\n__webpack_require__(/*! bootstrap */ \"./node_modules/bootstrap/dist/js/bootstrap.js\");\n\n__webpack_require__(/*! lightbox2/dist/js/lightbox-plus-jquery.js */ \"./node_modules/lightbox2/dist/js/lightbox-plus-jquery.js\");\n\nvar _bsComponents = __webpack_require__(/*! ./modules/bsComponents.js */ \"./js/modules/bsComponents.js\");\n\nvar _wowAnimate = __webpack_require__(/*! ./modules/wowAnimate.js */ \"./js/modules/wowAnimate.js\");\n\nvar _shadow = __webpack_require__(/*! ./modules/shadow.js */ \"./js/modules/shadow.js\");\n\nvar _script = __webpack_require__(/*! ./modules/script */ \"./js/modules/script.js\");\n\nvar _script2 = _interopRequireDefault(_script);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar script = new _script2.default();\n\n//# sourceURL=webpack:///./js/app.js?");
 
 /***/ }),
 
@@ -118,7 +118,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nalert('hello');\n\nexports.alert = alert;\n\n//# sourceURL=webpack:///./js/modules/script.js?");
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n\tvalue: true\n});\n/* Scroll to Top */\nvar scrollTop = document.getElementById('scrolltoTop');\n\nif (scrollTop) {\n\tvar scrollFunction = function scrollFunction() {\n\t\tif (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {\n\t\t\t// Top button show\n\t\t\tscrollTop.style.display = \"block\";\n\t\t} else {\n\t\t\t// Top button disappear\n\t\t\tscrollTop.style.display = \"none\";\n\t\t}\n\t};\n\n\t// When the user scrolls down 20px from the top of the document, show the button\n\twindow.onscroll = function () {\n\t\tscrollFunction();\n\t};\n\n\tscrollTop.addEventListener('click', function () {\n\t\treturn window.scroll({ top: 0, behavior: 'smooth' });\n\t});\n}\n\nexports.default = Script;\n\n//# sourceURL=webpack:///./js/modules/script.js?");
 
 /***/ }),
 

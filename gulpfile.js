@@ -3,7 +3,7 @@ const imagemin = require('gulp-imageMin');
 
 // Optimize Images
 gulp.task('imageMin', () =>
-	gulp.src(['img/*', 'img/*/*', 'node_modules/lightbox2/dist/images/*'])
+	gulp.src(['img/src/*', 'node_modules/lightbox2/dist/images/*'])
 		.pipe(imagemin())
 		.pipe(gulp.dest('img'))
 );
