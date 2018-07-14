@@ -25,6 +25,13 @@
 	padding: 3rem 3rem;
 }
 
+.page-title {
+	display: inline-block;
+	padding-bottom: 5px;
+	margin-bottom: 5rem;
+	border-bottom: 10px solid #333;
+}
+
 #top-nav {
 	grid-area: topNav;
 }
@@ -37,6 +44,7 @@
 }
 
 #side-nav .list-group-item {
+	/*height: 100vh;*/
 	border-top: none;
 }
 
@@ -48,6 +56,7 @@
 }
 
 #main {
+	/*min-height: 100vh;*/
 	-ms-grid-row: 2;
 	-ms-grid-column: 3;
 	grid-area: main;
@@ -74,6 +83,7 @@
 
 /*Grid >= md*/
 div.wrapper {
+	height: 100vh;
 	display: -ms-grid;
 	display: grid;
 	grid-row-gap: 30px;
@@ -81,7 +91,7 @@ div.wrapper {
 	    grid-template-columns: 300px 100px 1fr 100px;
 	-ms-grid-rows: repeat(3, auto);
 	    grid-template-rows: repeat(3, auto);
-                grid-template-areas: 
+                                                                                            grid-template-areas: 
 		"sideNav breadcrumb breadcrumb breadcrumb"
 		"sideNav . main quickMenu"
 		"sideNav footer footer footer";
@@ -96,7 +106,7 @@ div.wrapper {
 		    grid-template-columns: 270px 1fr;
 		-ms-grid-rows: (auto)[3];
 		    grid-template-rows: repeat(3, auto);
-                    grid-template-areas: 
+                                                                                                grid-template-areas: 
 		"sideNav breadcrumb"
 		"sideNav main"
 		"sideNav footer";
@@ -112,7 +122,7 @@ div.wrapper {
 		    grid-template-columns: 1fr;
 		-ms-grid-rows: minmax(70px, auto) auto 1fr;
 		    grid-template-rows: minmax(70px, auto) auto 1fr;
-                    grid-template-areas: 
+                                                                                                grid-template-areas: 
 		"topNav"
 		"breadcrumb"
 		"main"
@@ -203,4 +213,18 @@ figcaption {
 		    grid-template-rows: auto;
 
 	}
+}
+
+
+/*Disease Page */
+.disease-content {
+	display: -ms-grid;
+	display: grid;
+	grid-gap: 20px;
+	-ms-grid-columns: 1fr;
+	    grid-template-columns: 1fr;
+}
+
+.disease-content > * {
+	grid-column: 1 / -1;
 }
